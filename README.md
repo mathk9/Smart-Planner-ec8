@@ -10,11 +10,11 @@
 ## Rodar API Flask
 ---
 
-Criar Ambiente virtual python:
+Criar Ambiente virtual python:<br>
   #No cmd:
-    -[] python -m venv venv
-    -[] cd /venv/Script/.Activate.ps1
-    -[] cd .. x2
-    -[] pip install -r ./requirements
-  -[] rodar main.py
+    <br>- [ ] python -m venv venv
+    <br- [ ] cd /venv/Script/.Activate.ps1
+    <br- [ ] cd .. x2
+    <br- [ ] pip install -r ./requirements
+  <br- [ ] rodar main.py
 ---
