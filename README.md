@@ -2,7 +2,6 @@
 <h1 align="center">
 📱<br>Smart-Planner
 </h1>
----
 
 ## ☕ Requisitos
   #Python 
@@ -17,4 +16,8 @@ Criar Ambiente virtual python:<br>
     <br>- [ ] cd .. x2
     <br>- [ ] pip install -r ./requirements
   <br>- [ ] rodar main.py
----
+---<br>
+
+## 🍜 Documentação Swagger
+
+Com a API rodando acessar 'http://127.0.0.1:5000/docs'<br>
