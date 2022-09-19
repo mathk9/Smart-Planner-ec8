@@ -2,7 +2,7 @@ from flask import Flask
 from flask_restx import Api, Resource
 
 from src.server.instance import server
-from src.models.users import user
+from src.models.usersModel import user
 
 app, api = server.app, server.api
 
@@ -31,6 +31,16 @@ class User(Resource):
                 del users_db[i]
                 return '', 204
         return {'message': ITEM_NOT_FOUND}, 404
+
+    @api.expect(user, validate=True)
+    def put(self, id):
+        response = api.payload
+        for i in range(len(users_db)):
+            if users_db[i]['id'] == id:
+                users_db[i] = response
+                return users_db[i], 200
+        users_db.append(response)
+        return response, 200
 
 @api.route('/v1.0/users')
 class Userlist(Resource):
